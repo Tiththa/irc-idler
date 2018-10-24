@@ -4,7 +4,7 @@ import socket
 class IRCBot:
     def __init__(self, **kwargs):
         self.settings = {
-            'host':"chat.scoutlink.net",
+            'host':"chat.freenode.net",
             'port':6667,
             'channel':"#international",
             'contact': ":",
@@ -84,7 +84,7 @@ class IRCBot:
              
     def ping_pong(self):
         '''
-        The server pings and anything that does not pong back gets kicked
+        The server pings and anything that does not pong back gets kicked always
         '''
         try:
             if self.data[:4] == 'PING':
