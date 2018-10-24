@@ -63,7 +63,7 @@ def sendmsg(msg, target=channel):  # sends messages to the target.
 # Main function of the bot. This will call the other functions as necessary and process the information received from IRC and determine what to do with it.
 def main():
 
-	#ircsock.send(bytes("JOIN #deutsch-quiz \n" , "UTF-8"))
+	#ircsock.send(bytes("JOIN #deutsch-quiz \n" , "UTF-8"))   THIS WON"T WORK 
 	
     # start by joining the channel we defined in the Global Variables section.
     joinchan(channel)
