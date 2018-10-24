@@ -9,11 +9,11 @@ ircsock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # For example, if we ever want to connect to a list of channels (instead of just one as in this example) or change to a different server or channel we don’t have to find every instance
 # and can just edit this variable instead.
 # I’m using chat.freenode.net for this example. Other IRC networks will have you put in their name here.
-server = "webchat.scoutlink.net"  # Server
+server = "chat.freenode.net"  # Server
 # We don’t want to use and official/established channel while we do our testing. Aside from being rude, many channels have specific rules for bots or don’t allow them at all.
 # Make sure you check with a channel’s moderators before adding your bot to a channel. For our testing, we’re using a custom, unregistered room (Denoted by the ‘##’ before the channel name on Freenode).
 # This way we’ll be the only ones in the channel with the bot while we do our testing.
-channel = "#deutsch-quiz"  # Channel
+channel = "##deutsch-quiz"  # Channel
 # This is what we’ll be naming the bot. It is how other users will see the bot in the channel.
 # Make sure this is an unused and unregistered nick as your bot won’t be able to connect if it’s already in use and it will be assigned a random name after 30s if it’s a registered and protected nick.
 # See here for more information on Nickname registration: https://en.wikipedia.org/wiki/Wikipedia:IRC/Tutorial#Nickname_registration
